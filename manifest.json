@@ -1,0 +1,16 @@
+
+{ 
+  "manifest_version": 2,	
+  "name": "No more dialogs",
+  "version": "0.1",
+
+  "description": "Removes annoying dialogs from websites and re-enables their scrolling behaviours.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["removeDialogs.js"]
+    }
+  ]
+
+}
